@@ -37,25 +37,23 @@ h1
 	float:right;
 	height:100%;
 	left:0;
+	right:0;
 	top:0;
 	min-width:256px;
 	position:fixed;
 	width:30%;
-	display:block;
+	display: block;
+	overflow-y: scroll;
 }
 .subtitle {
 	color:#2980b9;
 }
 #subwrapper {
-	position: absolute;
 	width:100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-content: center;
-	left:0;
-	right:0;
-	top: 50%;
 }
 #subwrapper div {
 	width: auto;
@@ -70,14 +68,11 @@ h1
 
 .name-hero
 {
-	height:290px;
+	position: absolute;
 	left:0;
-	margin:auto;
-	margin-top: 2em;
-	position:absolute;
+	top: 2em;
 	right:0;
-	top:0;
-	width:85%;
+	width:100%;
 	text-align: center;
 }
 
@@ -153,8 +148,8 @@ h1
 
 
 #icon-credit {
-	position: absolute;
-	bottom: 1em;
+	display: fixed;
+	bottom: 0;
 	font-size: 0.75em;
 	font-style: italic;
 	text-align: center;
